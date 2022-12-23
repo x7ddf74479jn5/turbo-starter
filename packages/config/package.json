@@ -1,0 +1,28 @@
+{
+  "name": "config",
+  "version": "0.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "files": [
+    "eslint-next.js",
+    "eslint-server.js",
+    "jest-next.js",
+    "jest-server.js"
+  ],
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "5.47.0",
+    "@typescript-eslint/parser": "5.47.0",
+    "eslint-config-next": "13.0.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-config-turbo": "latest",
+    "eslint-import-resolver-typescript": "3.5.2",
+    "eslint-plugin-import": "2.26.0",
+    "eslint-plugin-jest": "27.1.7",
+    "eslint-plugin-jest-dom": "4.0.3",
+    "eslint-plugin-react": "7.31.8",
+    "eslint-plugin-testing-library": "5.9.1"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
