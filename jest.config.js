@@ -8,14 +8,15 @@ module.exports = {
   coveragePathIgnorePatterns: [],
   collectCoverageFrom: ['<rootDir>/src/**/*.{js,ts,tsx}'],
   coverageThreshold: null,
-  testEnvironment: 'jsdom',
+  testEnvironment: 'jest-environment-jsdom',
   transform: {
     '^.+\\.tsx?$': 'esbuild-jest',
+    '^.+\\.jsx?$': 'esbuild-jest',
   },
   setupFilesAfterEnv: ['@testing-library/jest-dom'],
   moduleDirectories: ['node_modules'],
   moduleFileExtensions: ['js', 'jsx', 'json', 'ts', 'tsx'],
   moduleNameMapper: {
-    '@src/(.*)': fromRoot('apps/next-app/src/$1'),
+    '@src/(.*)': '<rootDir>/src/$1',
   },
 }

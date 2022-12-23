@@ -1,7 +1,7 @@
-const base = require("../../jest.config");
-
 module.exports = {
-  ...base,
-  name: "next-app",
-  displayName: "Next-app Tests",
-};
+  ...require('config/jest-next'),
+  displayName: 'Next-app Tests',
+  moduleNameMapper: {
+    '@src/(.*)': '<rootDir>/src/$1',
+  },
+}
