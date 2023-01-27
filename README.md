@@ -1,6 +1,6 @@
 # Turborepo starter
 
-This is an official pnpm starter turborepo.
+This is an unofficial pnpm starter turborepo.
 
 ## What's inside?
 
@@ -8,10 +8,10 @@ This turborepo uses [pnpm](https://pnpm.io) as a package manager. It includes th
 
 ### Apps and Packages
 
-- `docs`: a [Next.js](https://nextjs.org/) app
-- `web`: another [Next.js](https://nextjs.org/) app
-- `ui`: a stub React component library shared by both `web` and `docs` applications
-- `eslint-config-custom`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
+- `next-aa`: a [Next.js](https://nextjs.org/) app
+- `server`: a [Express](https://expressjs.com/ja/) app
+- `ui`: a stub React component library shared by `next-app` and another applications
+- `config`: `eslint` and `jest` configurations
 - `tsconfig`: `tsconfig.json`s used throughout the monorepo
 
 Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
@@ -23,12 +23,14 @@ This turborepo has some additional tools already setup for you:
 - [TypeScript](https://www.typescriptlang.org/) for static type checking
 - [ESLint](https://eslint.org/) for code linting
 - [Prettier](https://prettier.io) for code formatting
+- [Jest](https://jestjs.io/ja/) for testing
+- [Husky](https://typicode.github.io/husky/) for git hooks
 
 ### Build
 
 To build all apps and packages, run the following command:
 
-```
+```shell
 cd my-turborepo
 pnpm run build
 ```
@@ -37,7 +39,7 @@ pnpm run build
 
 To develop all apps and packages, run the following command:
 
-```
+```shell
 cd my-turborepo
 pnpm run dev
 ```
@@ -48,7 +50,7 @@ Turborepo can use a technique known as [Remote Caching](https://turbo.build/repo
 
 By default, Turborepo will cache locally. To enable Remote Caching you will need an account with Vercel. If you don't have an account you can [create one](https://vercel.com/signup), then enter the following commands:
 
-```
+```shell
 cd my-turborepo
 pnpm dlx turbo login
 ```
@@ -57,7 +59,7 @@ This will authenticate the Turborepo CLI with your [Vercel account](https://verc
 
 Next, you can link your Turborepo to your Remote Cache by running the following command from the root of your turborepo:
 
-```
+```shell
 pnpm dlx turbo link
 ```
 
