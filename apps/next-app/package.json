@@ -18,7 +18,7 @@
   },
   "devDependencies": {
     "@types/node": "^17.0.0",
-    "@types/react": "^17.0.37",
+    "@types/react": "^18.0.0",
     "autoprefixer": "^10.4.0",
     "config": "workspace:*",
     "eslint": "^8.5.0",
